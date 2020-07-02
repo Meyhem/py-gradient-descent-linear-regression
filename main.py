@@ -34,8 +34,8 @@ B = 0.0  # intercept
 # higher learning rate might cause uncontrolled bouncing & will not converge
 learning_rate = 0.0001
 
-# Gradient descent until Squared error is below 30
-while sse(M, B, X, Y) > 30:
+# Gradient descent until Squared error is below 35
+while sse(M, B, X, Y) > 35:
     M -= dm_sse(M, B, X, Y) * learning_rate
     B -= db_sse(M, B, X, Y) * learning_rate
 
